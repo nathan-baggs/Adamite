@@ -1,0 +1,54 @@
+# Build Folders
+bin/
+obj/
+
+# User-Specific Files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.userprefs
+
+# Logs
+*.log
+
+# Visual Studio Specific
+.vscode/
+.vs/
+*.ncrunchsolution
+*.ncrunchproject
+*.cache
+*.pdb
+*.opendb
+
+# NuGet Packages
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Temporary Files
+*.tmp
+*.temp
+*.cache
+*.ide
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Publish Outputs
+publish/
+app.publish/
+
+# Other
+*.bak
+*.swp
