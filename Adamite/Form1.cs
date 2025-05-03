@@ -81,22 +81,8 @@ namespace Adamite
 
             Dictionary<int, byte[]> patches = new Dictionary<int, byte[]>
             {
-                { 0x1a9668, new byte[] { 
-                    0xe9, 0x56, 0x00, 0x00, 0x00 // jmp to patch part 1
-                } }, 
-                { 0x1a96c3, new byte[] {
-                    0x90, // nop
-                    0x8b, 0x5c, 0x24, 0x98, // save original stack value
-                    0xe9, 0x86, 0x00, 0x00, 0x00 // jmp to patch part 2
-                } },
-                { 0x1a9753, new byte[] {
-                    0x67, 0xe8, 0xe6, 0xc8, 0x09, 0x00, // call original function
-                    0xe9, 0xa7, 0x04, 0x00, 0x00 // jmp to patch part 3
-                } },
-                { 0x1a9c05, new byte[] {
-                    0x89, 0x5c, 0x24, 0x98, // restore original stack value
-                    0x31, 0xdb, // restore ebx (anecdotally this was zero before we started)
-                    0xe9, 0x5d, 0xfa, 0xff, 0xff // resume execution
+                { 0x1a6b1b, new byte[] { 
+                    0xe9, 0xf1, 0x00, 0x00, 0x00 // jump past the new code block
                 } }
             };
 
