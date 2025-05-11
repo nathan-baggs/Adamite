@@ -41,7 +41,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(352, 102);
             panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
             // 
             // label1
             // 
@@ -51,7 +50,6 @@
             label1.Size = new Size(117, 15);
             label1.TabIndex = 0;
             label1.Text = "Drag terranx.exe here";
-            label1.Click += label1_Click_1;
             // 
             // Form1
             // 
@@ -62,7 +60,6 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
             Text = "Adamite";
-            Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
