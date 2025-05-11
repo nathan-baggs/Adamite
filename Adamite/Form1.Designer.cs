@@ -28,46 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            label1 = new Label();
-            panel1.SuspendLayout();
+            pnlDragDrop = new Panel();
+            lblInfo = new Label();
+            pnlDragDrop.SuspendLayout();
             SuspendLayout();
             // 
-            // panel1
+            // pnlDragDrop
             // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(12, 12);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(352, 102);
-            panel1.TabIndex = 0;
+            pnlDragDrop.BorderStyle = BorderStyle.FixedSingle;
+            pnlDragDrop.Controls.Add(lblInfo);
+            pnlDragDrop.Location = new Point(14, 16);
+            pnlDragDrop.Margin = new Padding(3, 4, 3, 4);
+            pnlDragDrop.Name = "pnlDragDrop";
+            pnlDragDrop.Size = new Size(402, 135);
+            pnlDragDrop.TabIndex = 0;
             // 
-            // label1
+            // lblInfo
             // 
-            label1.AutoSize = false;
-            label1.Location = new Point(113, 38);
-            label1.Name = "label1";
-            label1.Size = new Size(117, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Drag terranx.exe here";
+            lblInfo.Location = new Point(0, 0);
+            lblInfo.Name = "lblInfo";
+            lblInfo.Size = new Size(400, 133);
+            lblInfo.TabIndex = 0;
+            lblInfo.Text = "Drag terranx.exe here";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(376, 126);
-            Controls.Add(panel1);
+            ClientSize = new Size(430, 168);
+            Controls.Add(pnlDragDrop);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Adamite";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            pnlDragDrop.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
-        private Label label1;
+        private Panel pnlDragDrop;
+        private Label lblInfo;
     }
 }
